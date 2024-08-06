@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Forecast Interface Practise</string>
+    <string name="title">Погода на неделю</string>
 </resources>
