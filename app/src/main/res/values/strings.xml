@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Forecast Interface Practise</string>
     <string name="title">Погода на неделю</string>
+    <string name="day1">Пн</string>
+    <string name="day2">Вт</string>
+    <string name="day3">Ср</string>
+    <string name="day4">Чт</string>
+    <string name="day5">Пт</string>
+    <string name="day6">Сб</string>
+    <string name="day7">Вс</string>
 </resources>
