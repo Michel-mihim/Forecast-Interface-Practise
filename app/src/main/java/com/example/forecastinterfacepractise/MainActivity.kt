@@ -43,10 +43,12 @@ class MainActivity : AppCompatActivity() {
             getString(R.string.plus_5)
         )
 
+        val weather_list = listOf(1, 2)
+
         val recyclerView = findViewById<RecyclerView>(R.id.forecastBoxesRecycler)
         recyclerView.adapter = ForecastBoxAdapter(
             forecastBoxes = List(90) {
-                ForecastBox(week_days_list[it % 7], temperatures_list[it % 11])
+                ForecastBox(week_days_list[it % 7], temperatures_list[it % 11],weather_list[it % 2])
             }
         )
 

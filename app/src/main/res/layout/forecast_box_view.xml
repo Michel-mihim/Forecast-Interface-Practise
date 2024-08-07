@@ -9,20 +9,23 @@
         android:id="@+id/weekDay"
 
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:gravity="center"
         android:textColor="@color/white"/>
-    <!--
+
     <ImageView
+        android:id="@+id/weather"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    -->
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="centerInside"/>
+
     <TextView
         android:id="@+id/temperature"
 
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:gravity="center"
         android:textColor="@color/white"/>

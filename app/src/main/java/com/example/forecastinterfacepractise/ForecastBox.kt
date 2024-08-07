@@ -3,11 +3,12 @@ package com.example.forecastinterfacepractise
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.view.menu.MenuView.ItemView
 import androidx.recyclerview.widget.RecyclerView
 
-data class ForecastBox(val weekDay: String, val temperature: String)
+data class ForecastBox(val weekDay: String, val temperature: String, val weather: Int)
 
 class ForecastBoxAdapter(
     private val forecastBoxes: List<ForecastBox>
@@ -25,10 +26,12 @@ class ForecastBoxAdapter(
 
     class ForecastBoxViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val weekDayTextView: TextView
+        private val weatherImageView: ImageView
         private val temperatureTextView: TextView
 
         init {
             weekDayTextView = itemView.findViewById(R.id.weekDay)
+            weatherImageView = itemView.findViewById(R.id.weather)
             temperatureTextView = itemView.findViewById(R.id.temperature)
         }
 
@@ -51,6 +54,13 @@ class ForecastBoxAdapter(
             }
 
             itemView.setBackgroundColor(itemView.context.getColor(temperatureColor))
+
+            val weatherId = when (forecastBox.weather) {
+                1 -> R.drawable.clouds
+                else -> R.drawable.sun
+            }
+
+            weatherImageView.setImageResource(weatherId)
         }
 
     }
