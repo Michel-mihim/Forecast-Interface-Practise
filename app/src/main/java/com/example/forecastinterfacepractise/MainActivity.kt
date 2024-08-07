@@ -29,10 +29,24 @@ class MainActivity : AppCompatActivity() {
             getString(R.string.day7)
         )
 
+        val temperatures_list = listOf(
+            getString(R.string.minus_5),
+            getString(R.string.minus_4),
+            getString(R.string.minus_3),
+            getString(R.string.minus_2),
+            getString(R.string.minus_1),
+            getString(R.string.oh),
+            getString(R.string.plus_1),
+            getString(R.string.plus_2),
+            getString(R.string.plus_3),
+            getString(R.string.plus_4),
+            getString(R.string.plus_5)
+        )
+
         val recyclerView = findViewById<RecyclerView>(R.id.forecastBoxesRecycler)
         recyclerView.adapter = ForecastBoxAdapter(
             forecastBoxes = List(90) {
-                ForecastBox(week_days_list[it % 7])
+                ForecastBox(week_days_list[it % 7], temperatures_list[it % 11])
             }
         )
 

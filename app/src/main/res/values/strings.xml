@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Forecast Interface Practise</string>
     <string name="title">Погода на неделю</string>
+
     <string name="day1">Пн</string>
     <string name="day2">Вт</string>
     <string name="day3">Ср</string>
@@ -8,4 +9,16 @@
     <string name="day5">Пт</string>
     <string name="day6">Сб</string>
     <string name="day7">Вс</string>
+
+    <string name="minus_5">-5</string>
+    <string name="minus_4">-4</string>
+    <string name="minus_3">-3</string>
+    <string name="minus_2">-2</string>
+    <string name="minus_1">-1</string>
+    <string name="oh">0</string>
+    <string name="plus_1">+1</string>
+    <string name="plus_2">+2</string>
+    <string name="plus_3">+3</string>
+    <string name="plus_4">+4</string>
+    <string name="plus_5">+5</string>
 </resources>
