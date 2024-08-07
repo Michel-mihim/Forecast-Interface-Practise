@@ -3,4 +3,16 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="titleBackground">#522881</color>
+
+    <color name="color_minus_5">#120873</color>
+    <color name="color_minus_4">#372F85</color>
+    <color name="color_minus_3">#2618B1</color>
+    <color name="color_minus_2">#594CD8</color>
+    <color name="color_minus_1">#7B72D8</color>
+    <color name="color_0">#FFFFFFFF</color>
+    <color name="color_plus_1">#FF9174</color>
+    <color name="color_plus_2">#FF6841</color>
+    <color name="color_plus_3">#FF3500</color>
+    <color name="color_plus_14">#BE4E30</color>
+    <color name="color_plus_5">#A42200</color>
 </resources>
