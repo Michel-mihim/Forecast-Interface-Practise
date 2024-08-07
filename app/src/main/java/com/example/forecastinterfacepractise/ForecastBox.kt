@@ -35,6 +35,22 @@ class ForecastBoxAdapter(
         fun bind(forecastBox: ForecastBox) {
             weekDayTextView.text = forecastBox.weekDay
             temperatureTextView.text = forecastBox.temperature
+
+            val temperatureColor = when (forecastBox.temperature) {
+                "-5" -> "color_minus_5"
+                "-4" -> "color_minus_4"
+                "-3" -> "color_minus_3"
+                "-2" -> "color_minus_2"
+                "-1" -> "color_minus_1"
+                "+1" -> "color_plus_1"
+                "+2" -> "color_plus_2"
+                "+3" -> "color_plus_3"
+                "+4" -> "color_plus_4"
+                "+5" -> "color_plus_5"
+                else -> "color_0"
+            }
+
+            itemView.setBackgroundColor()
         }
 
     }
