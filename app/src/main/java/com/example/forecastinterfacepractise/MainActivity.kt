@@ -19,13 +19,20 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        val week_days_list = listOf(R.string.day1, R.string.day2, R.string.day3, R.string.day4,
-            R.string.day5, R.string.day6, R.string.day7)
+        val week_days_list = listOf(
+            getString(R.string.day1),
+            getString(R.string.day2),
+            getString(R.string.day3),
+            getString(R.string.day4),
+            getString(R.string.day5),
+            getString(R.string.day6),
+            getString(R.string.day7)
+        )
 
         val recyclerView = findViewById<RecyclerView>(R.id.forecastBoxesRecycler)
         recyclerView.adapter = ForecastBoxAdapter(
             forecastBoxes = List(90) {
-                ForecastBox("1")
+                ForecastBox(week_days_list[it % 7])
             }
         )
 
